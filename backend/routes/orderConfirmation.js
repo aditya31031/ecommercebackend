@@ -31,7 +31,7 @@ const itemsSql = `
   SELECT 
     oi.*, 
     p.name AS product_name,
-    p.image_url AS product_image   -- <--- add this
+    p.image_url AS product_image
   FROM order_items oi
   JOIN products p ON oi.product_id = p.id 
   WHERE oi.order_id = ?
